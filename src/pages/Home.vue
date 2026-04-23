@@ -4,7 +4,5 @@
     <p>Esta página está en desarrollo</p>
   </div>
 </template>
-
 <script setup>
-// Componente vacío / pendiente
 </script>

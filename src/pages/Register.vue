@@ -42,7 +42,7 @@
 
     <p class="text-center text-sm text-gray-500 mt-4">
       ¿Ya tienes cuenta?
-      <router-link to="/auth/login" class="text-blue-500 hover:underline">Inicia sesión</router-link>
+      <router-link to="/login" class="text-blue-500 hover:underline">Inicia sesión</router-link>
     </p>
   </div>
 </template>
