@@ -13,6 +13,7 @@
       <img
         :src="product.image"
         :alt="product.name"
+        @error="onImgError"
         class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
       />
     </router-link>
@@ -58,5 +59,10 @@ const cartStore = useCartStore()
 // Agrega el producto al carrito y muestra feedback breve
 function agregarAlCarrito() {
   cartStore.addItem(props.product)
+}
+
+// Si la imagen remota falla, muestra un placeholder en su lugar
+function onImgError(e) {
+  e.target.src = 'https://placehold.co/500x400?text=Sin+imagen'
 }
 </script>

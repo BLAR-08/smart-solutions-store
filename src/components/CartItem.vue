@@ -8,10 +8,11 @@
 <template>
   <div class="flex items-center gap-4 bg-white rounded-lg shadow-sm p-4 border border-gray-100">
 
-    <!-- Imagen del producto — si no hay, muestra un placeholder -->
+    <!-- Imagen del producto — si no hay o falla al cargar, muestra un placeholder -->
     <img
       :src="item.image || 'https://placehold.co/100x100?text=Producto'"
       :alt="item.name"
+      @error="onImgError"
       class="w-20 h-20 object-cover rounded"
     />
 
@@ -63,5 +64,10 @@ const cartStore = useCartStore()
 // Cambia la cantidad llamando al store — si es 0 o menos, lo elimina
 function cambiarCantidad(nuevaCantidad) {
   cartStore.updateQuantity(props.item.id, nuevaCantidad)
+}
+
+// Si la imagen remota falla, muestra un placeholder en su lugar
+function onImgError(e) {
+  e.target.src = 'https://placehold.co/100x100?text=Producto'
 }
 </script>

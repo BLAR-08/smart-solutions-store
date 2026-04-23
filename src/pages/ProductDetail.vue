@@ -40,6 +40,7 @@
           <img
             :src="producto.image"
             :alt="producto.name"
+            @error="onImgError"
             class="w-full h-96 object-cover"
           />
         </div>
@@ -145,5 +146,10 @@ function agregarAlCarrito() {
   mensaje.value = `✓ ${cantidad.value} producto(s) agregado(s) al carrito`
   // El mensaje desaparece a los 2 segundos para no ensuciar la vista
   setTimeout(() => { mensaje.value = '' }, 2000)
+}
+
+// Si la imagen remota falla, muestra un placeholder en su lugar
+function onImgError(e) {
+  e.target.src = 'https://placehold.co/600x400?text=Sin+imagen'
 }
 </script>

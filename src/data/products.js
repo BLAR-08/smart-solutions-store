@@ -32,7 +32,7 @@ export const products = [
     price: 49.90,
     stock: 80,
     featured: true,
-    image: 'https://images.unsplash.com/photo-1558002038-876f1d0aa8d6?w=500',
+    image: 'https://images.unsplash.com/photo-1524634126442-357e0eac3c14?w=500',
     description: 'Foco regulable con 16 millones de colores, controlable desde el celular. Compatible con Alexa y Google Home.'
   },
   {
@@ -42,7 +42,7 @@ export const products = [
     price: 34.90,
     stock: 120,
     featured: true,
-    image: 'https://images.unsplash.com/photo-1558089966-a11f54e07996?w=500',
+    image: 'https://images.unsplash.com/photo-1585399000684-d2f72660f092?w=500',
     description: 'Controla cualquier aparato eléctrico desde tu celular. Incluye medidor de consumo energético para ahorrar en tu recibo de luz.'
   },
   {
@@ -62,7 +62,7 @@ export const products = [
     price: 259.00,
     stock: 15,
     featured: true,
-    image: 'https://images.unsplash.com/photo-1567925086324-cfdfc1f5a5ab?w=500',
+    image: 'https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?w=500',
     description: 'Controla la temperatura de tu hogar de forma remota. Aprende tus rutinas y reduce el consumo de energía automáticamente.'
   },
   {
@@ -82,7 +82,7 @@ export const products = [
     price: 79.90,
     stock: 50,
     featured: false,
-    image: 'https://images.unsplash.com/photo-1565636192335-69c79feeb61a?w=500',
+    image: 'https://images.unsplash.com/photo-1595231712325-9fedecef7575?w=500',
     description: 'Tira LED flexible con control por app y mando a distancia. Ritmos de música y animaciones incluidos.'
   },
   {
