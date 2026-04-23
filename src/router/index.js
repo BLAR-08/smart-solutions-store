@@ -21,7 +21,7 @@ const routes = [
       { 
         path: '/profile', 
         component: () => import('../pages/Profile.vue'), 
-        meta: { requiresAuth: true }  // Ruta protegida — solo usuarios logueados
+        meta: { requiresAuth: true }  // Ruta protegida — solo usuarios logueados - definicion de metadata
       },
       { 
         path: '/checkout', 
@@ -58,6 +58,11 @@ router.beforeEach((to, from, next) => {
 
   // Si la ruta requiere autenticación y no hay sesión activa, redirige al login
   if (to.meta.requiresAuth && !userStore.isLoggedIn) {
+    //     ^^^^^^^^^^^^^^^^^^^
+    //     Aquí se accede a la metadata
+    //     to.meta = metadata de la ruta a la que vas
+    //     to.meta.requiresAuth = el valor true que pusimos en la ruta
+    
     next('/login')
   } else {
     next() // Permite la navegación normal
