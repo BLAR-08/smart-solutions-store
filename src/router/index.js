@@ -13,6 +13,7 @@ const routes = [
       { path: '/product/:id', component: () => import('../pages/ProductDetail.vue') },
       { path: '/cart', component: () => import('../pages/Cart.vue') },
       { path: '/profile', component: () => import('../pages/Profile.vue'), meta: { requiresAuth: true } },
+      { path: '/orders', component: () => import('../pages/MyOrders.vue'), meta: { requiresAuth: true } },
       { path: '/checkout', component: () => import('../pages/Checkout.vue'), meta: { requiresAuth: true } },
     ]
   },
