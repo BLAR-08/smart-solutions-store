@@ -14,7 +14,7 @@
         :src="product.image"
         :alt="product.name"
         @error="onImgError"
-        class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+        class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
       />
     </router-link>
 

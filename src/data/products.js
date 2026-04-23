@@ -82,7 +82,7 @@ export const products = [
     price: 79.90,
     stock: 50,
     featured: false,
-    image: 'https://images.unsplash.com/photo-1595231712325-9fedecef7575?w=500',
+    image: 'https://images.unsplash.com/photo-1618403323851-ac3d38029495?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     description: 'Tira LED flexible con control por app y mando a distancia. Ritmos de música y animaciones incluidos.'
   },
   {
